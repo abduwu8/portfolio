@@ -1,33 +1,35 @@
 import React from 'react'
 import linked from '../assets/linked.png'
-import { FiDownload, FiGithub } from 'react-icons/fi'
-import jsLogo from '../assets/Logos/js.png'
-import javaLogo from '../assets/Logos/java.png'
-import tsLogo from '../assets/Logos/ts.png'
-import pythonLogo from '../assets/Logos/py.png'
-import reactLogo from '../assets/Logos/react.png'
-import nodeLogo from '../assets/Logos/node.png'
-import nextLogo from '../assets/Logos/next.png'
-import mongoLogo from '../assets/Logos/mongo.png'
-import awsLogo from '../assets/Logos/aws.png'
-import firebaseLogo from '../assets/Logos/firebase.png'
-import gitLogo from '../assets/Logos/git.png'
-import githubLogo from '../assets/Logos/github.png'
-import emailIcon from '../assets/Logos/email.png'
-import twitterIcon from '../assets/Logos/twitter.png'
-import githubIcon from '../assets/Logos/github.png'
-import linkedinIcon from '../assets/Logos/linkedin.png'
-import peerlistIcon from '../assets/Logos/donation.png'
+import { FiGithub } from 'react-icons/fi'
+import jsLogo from '../assets/logos/js.png'
+import javaLogo from '../assets/logos/java.png'
+import tsLogo from '../assets/logos/ts.png'
+import pythonLogo from '../assets/logos/py.png'
+import reactLogo from '../assets/logos/react.png'
+import nodeLogo from '../assets/logos/node.png'
+import nextLogo from '../assets/logos/next.png'
+import mongoLogo from '../assets/logos/mongo.png'
+import awsLogo from '../assets/logos/aws.png'
+import firebaseLogo from '../assets/logos/firebase.png'
+import gitLogo from '../assets/logos/git.png'
+import githubLogo from '../assets/logos/github.png'
+import emailIcon from '../assets/logos/email.png'
+import twitterIcon from '../assets/logos/twitter.png'
+import githubIcon from '../assets/logos/github.png'
+import linkedinIcon from '../assets/logos/linkedin.png'
+import peerlistIcon from '../assets/logos/donation.png'
 import fladdraLogo from '../assets/Logos/fladdralogo.jfif'
 import oviverseLogo from '../assets/Logos/oviverse.png'
 import invoxusPreview from '../assets/Logos/invoxus.png'
 import unoraPreview from '../assets/Logos/unora.png'
+import resumeIcon from '../assets/Logos/resume.png'
+import resumePdf from '../abduresume (7).pdf'
 
 const Home = () => {
   return (
     <main className="relative min-h-screen w-full overflow-x-hidden bg-[#0e0f10] text-slate-100">
       {/* UI guide lines (light white) */}
-      <div className="relative mx-auto flex min-h-screen w-full max-w-3xl flex-col items-center border-y border-white/25 pt-14 sm:pt-20">
+      <div className="relative mx-auto flex min-h-screen w-full max-w-3xl flex-col items-center pt-14 sm:pt-20">
         {/* UI guide lines (light white) - align to container on mobile, full width on larger screens */}
         <div className="pointer-events-none absolute top-[78px] left-0 right-0 z-10 h-px bg-white/25 sm:left-1/2 sm:right-auto sm:w-screen sm:-translate-x-1/2" />
         <div className="pointer-events-none absolute top-[152px] left-0 right-0 z-10 h-px bg-white/25 sm:left-1/2 sm:right-auto sm:w-screen sm:-translate-x-1/2" />
@@ -95,17 +97,17 @@ const Home = () => {
           </div>
 
           {/* Single CTA icon link */}
-          <div className="mt-10 flex flex-wrap items-center justify-center gap-3 text-sm">
+          <div className="mt-10 flex flex-col items-center justify-center gap-2 text-sm">
             <a
-              href="#"
-              className="inline-flex items-center rounded-full border border-transparent px-1 py-1 text-slate-200"
+              href={resumePdf}
+              download="abdullah-resume.pdf"
+              className="inline-flex items-center text-slate-200"
               aria-label="Resume"
               title="Resume"
             >
-              <span className="flex h-8 w-8 items-center justify-center rounded-full bg-slate-900/70 shadow-sm">
-                <FiDownload className="h-4 w-4" />
-              </span>
+              <img src={resumeIcon} alt="" className="h-10 w-10 object-contain" />
             </a>
+            <p className="text-xs text-slate-400">My CV</p>
           </div>
 
           {/* Divider */}

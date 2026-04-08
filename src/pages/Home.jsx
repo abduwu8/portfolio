@@ -99,7 +99,7 @@ const Home = () => {
   }
 
   return (
-    <main className="relative min-h-screen w-full overflow-x-hidden bg-[#0e0f10] text-slate-100">
+    <main className="relative min-h-screen w-full bg-[#0e0f10] text-slate-100">
       {/* UI guide lines (light white) */}
       <div className="relative mx-auto flex min-h-screen w-full max-w-3xl flex-col items-center pt-14 sm:pt-20">
         {/* UI guide lines (light white) - align to container on mobile, full width on larger screens */}

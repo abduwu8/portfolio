@@ -5,7 +5,17 @@
 @tailwind utilities;
 
 @layer base {
+  /*
+    Horizontal overflow only on the document root.
+    Do NOT set overflow-x: hidden on both html and body — in CSS, that forces
+    overflow-y to compute to auto on each, so both become scroll containers → double scrollbars.
+  */
   html {
     font-family: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+    overflow-x: clip;
+  }
+
+  body {
+    margin: 0;
   }
 }

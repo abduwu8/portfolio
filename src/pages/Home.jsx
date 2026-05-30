@@ -22,6 +22,7 @@ import githubIcon from '../assets/Logos/github.png'
 import linkedinIcon from '../assets/Logos/linkedin.png'
 import peerlistIcon from '../assets/Logos/donation.png'
 import fladdraLogo from '../assets/Logos/fladdralogo.jfif'
+import jioLogo from '../assets/Logos/Reliance_Jio.png'
 import oviverseLogo from '../assets/Logos/oviverse.png'
 import invoxusPreview from '../assets/Logos/invoxus.png'
 import unoraPreview from '../assets/Logos/unora.png'
@@ -437,8 +438,51 @@ const Home = () => {
             <div className="mt-6">
               <div className="flex flex-col gap-4 pb-8 sm:flex-row sm:items-start sm:justify-between">
                 <div className="flex items-start gap-4">
-                  <div className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-xl bg-slate-900/70 ring-1 ring-white/10">
-                    <img src={fladdraLogo} alt="Fladdra Tech." className="h-full w-full object-cover" />
+                  <div className="flex h-14 w-14 shrink-0 items-center justify-center overflow-hidden rounded-full bg-[#0A2885] ring-1 ring-white/15 sm:h-12 sm:w-12">
+                    <img
+                      src={jioLogo}
+                      alt="Jio, Reliance"
+                      className="h-full w-full scale-[1.12] object-cover object-center"
+                    />
+                  </div>
+
+                  <div className="min-w-0">
+                    <div className="flex flex-wrap items-center gap-2">
+                      <p className=" text-sm font-semibold text-slate-100">
+                        Jio, Reliance
+                      </p>
+                    </div>
+                    <p className="mt-1 text-sm text-slate-100">Software Engineer Intern</p>
+
+                    <ul className="mt-4 space-y-2 text-sm leading-6 text-slate-100">
+                      <li className="flex gap-2">
+                        <span className="mt-[9px] h-1.5 w-1.5 shrink-0 rounded-full bg-slate-600" />
+                        Worked with Go (Golang) on Jio engineering projects, building and extending backend services.
+                      </li>
+                      <li className="flex gap-2">
+                        <span className="mt-[9px] h-1.5 w-1.5 shrink-0 rounded-full bg-slate-600" />
+                        Contributed to production codebases alongside platform teams across internal Jio initiatives.
+                      </li>
+                      <li className="flex gap-2">
+                        <span className="mt-[9px] h-1.5 w-1.5 shrink-0 rounded-full bg-slate-600" />
+                        Shipped features and fixes in a fast-paced onsite environment with cross-functional collaboration.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div className="shrink-0 text-left sm:text-right">
+                  <p className="font-mono text-sm text-slate-100">May 2026 - August 2026</p>
+                  <p className="mt-1 text-xs text-slate-100/70">Onsite / Navi Mumbai</p>
+                </div>
+              </div>
+
+              <div className="pointer-events-none mb-8 h-px w-full bg-white/25 sm:relative sm:left-1/2 sm:w-screen sm:-translate-x-1/2" />
+
+              <div className="mt-8 flex flex-col gap-4 pb-8 sm:flex-row sm:items-start sm:justify-between">
+                <div className="flex items-start gap-4">
+                  <div className="flex h-14 w-14 shrink-0 items-center justify-center overflow-hidden rounded-xl bg-slate-900/70 p-1 ring-1 ring-white/10 sm:h-12 sm:w-12 sm:p-0">
+                    <img src={fladdraLogo} alt="Fladdra Tech." className="h-full w-full object-contain" />
                   </div>
 
                   <div className="min-w-0">
@@ -477,8 +521,8 @@ const Home = () => {
 
               <div className="mt-8 flex flex-col gap-4 pb-8 sm:flex-row sm:items-start sm:justify-between">
                 <div className="flex items-start gap-4">
-                  <div className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-xl bg-slate-900/70 ring-1 ring-white/10">
-                    <img src={oviverseLogo} alt="OviVerse Pvt Ltd." className="h-full w-full object-cover" />
+                  <div className="flex h-14 w-14 shrink-0 items-center justify-center overflow-hidden rounded-xl bg-slate-900/70 p-1 ring-1 ring-white/10 sm:h-12 sm:w-12 sm:p-0">
+                    <img src={oviverseLogo} alt="OviVerse Pvt Ltd." className="h-full w-full object-contain" />
                   </div>
 
                   <div className="min-w-0">
